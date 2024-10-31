@@ -38,7 +38,7 @@ X_orig = pd.read_csv(r"/home/wwj/chenqiliang/wubiaoqian/All-channel_matrix_p_10.
 X_orig = np.asarray(X_orig, np.float32)
 dataset = X_orig.reshape(X_orig.shape[0],8,8,1)
 
-label = pd.read_csv(r"/home/wwj/chenqiliang/wubiaoqian/capacity_labels_p_10.csv").iloc[:, 1]
+label = pd.read_csv(r"/home/wwj/chenqiliang/wubiaoqian/gain_labels_p_10.csv").iloc[:, 1]
 label = np.asarray(label, np.int32)
 label.astype(np.int32)
 n_class =  784
